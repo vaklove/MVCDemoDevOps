@@ -17,3 +17,9 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- task: NuGetToolInstaller@0
+  displayName: 'Use NuGet 6.4.0'
+  inputs:
+    versionSpec: 6.4.0
+    checkLatest: true
